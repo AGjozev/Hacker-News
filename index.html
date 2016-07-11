@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>MyHackerNews</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/icons/Contacts_orn.png" />
+    <script src="scripts/jquery/jquery.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link href="assets/css/main.style.css" media="only screen and (min-width: 681px)" rel="stylesheet" />
+    <link href="assets/css/style_mob.css" media="only screen and (max-width: 680px)" rel="stylesheet" />
+</head>
+<body>
+
+
+<div class="container-fluid" id="app_container">
+
+    <!-- main header -->
+    <div class="row" id="header">
+        <div class="col-md-3 col-sm-1 col-xs-2" id="logo_holder">
+            <a href="index.html">
+                <img src="assets/images/logo-hn-search.png" id="logo_icon" class="form-inline">
+                <h3 id="logo_moto" class="form-inline">Search<br>Hacker News</h3>
+            </a>
+        </div>
+        <div class="col-md-8 col-sm-10 col-xs-10">
+            <div id="search_holder">
+                <img src="assets/icons/Search_2orn.png" id="search_icon">
+                <input id="search" type="text" autocomplete="off" placeholder="Search stories"/>
+            </div>
+        </div>
+        <div class="col-md-1 col-sm-1 col-xs-0">
+            <img src="assets/icons/Share.png" id="share_page" class="share_icon form-inline" data-url="http://localhost:63342/HackerNewsClone/HackerNews.Buildup/trunk/src/index.html"/>
+        </div>
+    </div>
+
+    <!-- side menu -->
+        <div id="side_menu" >
+            <div id="top_side_menu">
+                <div class="side_menu_tab active" id="all">
+                    <img src="assets/icons/News.png" class="all_icon">
+                    <h4 class="side_menu_titles">All</h4>
+                </div>
+                <div class="side_menu_tab" id="hot">
+                    <img src="assets/icons/Gas.png" class="all_icon">
+                    <h4 class="side_menu_titles">Hot</h4>
+                </div>
+                <div class="side_menu_tab" id="show_hn">
+                    <img src="assets/icons/Advertising.png" class="all_icon">
+                    <h4 class="side_menu_titles">Show HN</h4>
+                </div>
+                <div class="side_menu_tab" id="ask_hn">
+                    <img src="assets/icons/Speech%20Bubble.png" class="all_icon ">
+                    <h4 class="side_menu_titles ">Ask HN</h4>
+                </div>
+
+                <div class="side_menu_tab" id="jobs">
+                    <img src="assets/icons/Banknotes.png" class="all_icon ">
+                    <h4 class="side_menu_titles ">Jobs</h4>
+                </div>
+            </div>
+        </div>
+
+    <!-- main news container -->
+        <div id="main_container">
+            <div id="top_menu" class="row">
+                <div class="col-md-11 col-sm-11 col-xs-10 form-inline" id="search_options">
+
+
+                    <h4 id="category_search" class="title"></h4>
+
+                    <h4 id="category" class="title"></h4>
+
+                    <h4 id="description" class="title">stories.</h4>
+                    
+                </div>
+                <div class="col-md-1 col-sm-1 col-xs-2 form-inline" id="results_counter">
+                    <div class="form-inline" id="load_circle"></div>
+                </div>
+            </div>
+
+
+             <div id="news_container">
+
+                <div id="news_holder"></div>
+
+                <div id="news_footer">
+                    <div class="form-inline page_numbers"></div>
+                </div>
+                 </div>
+            </div>
+
+        </div>
+
+
+
+</div>
+
+<script src="scripts/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/apis/facebook.api.js"></script>
+<script type="text/javascript" src="plugins/moment.min.js"></script>
+<script type="text/javascript" src="scripts/modules/loading.overview.js"></script>
+<script type="text/javascript" src="scripts/modules/events.module.js"></script>
+<script type="text/javascript" src="scripts/modules/ajax.module.js"></script>
+<script type="text/javascript" src="scripts/modules/news.manager.js"></script>
+<script type="text/javascript" src="scripts/modules/render.js"></script>
+<script type="text/javascript" src="scripts/modules/search.module.js"></script>
+<script type="text/javascript" src="scripts/modules/news.view.js"></script>
+<script type="text/javascript" src="scripts/modules/side_menu.js"></script>
+<script type="text/javascript" src="scripts/app/main.js"></script>
+
+</body>
+</html>
