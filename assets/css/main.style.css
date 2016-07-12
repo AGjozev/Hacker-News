@@ -115,6 +115,10 @@ body {
 
 #share_page {
     margin: 20px 0;
+    height: 18px;
+    width: 18px;
+    float: right;
+    cursor: pointer;
 }
 
 /* header end*/
