@@ -27,5 +27,5 @@ The search is done by writing a text in the search input field and clicking on t
 The API doesn’t support search requests. The stories requests must be done individually for each story. This means that each search request must be done by individual requests for each story, comparing the title, user name and source site URL to the searched text, so the search may take awhile.
 
 ## Offline 
-While online, all stories received by clicking on a category or by sweeping through the pages, are stored in the browsers local storage. This means that when you are offline you will still have access to all the stories that were stored, get them through their categories or perform searches.  
+While online, all stories, received by clicking on a category or by sweeping through the pages, are stored in the browsers local storage. This means that when you are offline you will still have access to all the stories that were stored, get them through their categories or perform searches.  
 
